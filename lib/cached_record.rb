@@ -1,5 +1,9 @@
 # $Id$
 
+require 'rubygems'
+require 'activerecord'
+require 'memcache'
+
 # Equivalent to a header guard in C/C++
 # Used to prevent the class/module from being loaded more than once
 unless defined? CachedRecord
@@ -7,7 +11,7 @@ unless defined? CachedRecord
 module CachedRecord
 
   # :stopdoc:
-  VERSION = '1.0.0'
+  VERSION = '0.0.1'
   LIBPATH = ::File.expand_path(::File.dirname(__FILE__)) + ::File::SEPARATOR
   PATH = ::File.dirname(LIBPATH) + ::File::SEPARATOR
   # :startdoc:

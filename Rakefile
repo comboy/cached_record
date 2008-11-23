@@ -10,11 +10,20 @@ require 'cached_record'
 task :default => 'spec:run'
 
 PROJ.name = 'cached_record'
-PROJ.authors = 'FIXME (who is writing this software)'
-PROJ.email = 'FIXME (your e-mail)'
+PROJ.authors = 'Kacper Cieśla (comboy)'
+PROJ.email = 'kacper.ciesla@gmail.com'
 PROJ.url = 'FIXME (project homepage)'
 PROJ.rubyforge.name = 'cached_record'
 
 PROJ.spec.opts << '--color'
+
+
+namespace :test do
+  desc 'Prepare data for testing'
+  task :prepare do
+    require 'test/environment'
+    CachedRecord::TestEnvironment.setup_db
+  end
+end
 
 # EOF
