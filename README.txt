@@ -1,32 +1,42 @@
 cached_record
-    by FIXME (your name)
+    by Kacper Cieśla (comboy)
     FIXME (url)
 
 == DESCRIPTION:
 
-FIXME (describe your package)
+  caching for activerecord using memcached
 
 == FEATURES/PROBLEMS:
 
-* FIXME (list of features or problems)
+* I 
+* am 
+* so
+* lazy
 
 == SYNOPSIS:
 
-  FIXME (code sample of usage)
+  require 'cached_record'
+
+  class User < CachedRecord::Base
+
+    # normal AR class here
+
+  end
 
 == REQUIREMENTS:
 
-* FIXME (list of requirements)
+* active_record
+* memcache 
 
 == INSTALL:
 
-* FIXME (sudo gem install, anything else)
+sudo gem install cached_record
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 FIXME (different license?)
+Copyright (c) 2008 Kacper Cieśla
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
