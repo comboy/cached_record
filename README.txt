@@ -9,9 +9,9 @@ cached_record
 == FEATURES/PROBLEMS:
 
 * I 
-* am 
+* am (features)
 * so
-* lazy
+* lazy (problems)
 
 == SYNOPSIS:
 
