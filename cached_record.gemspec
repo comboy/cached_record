@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'cached_recard'
+  s.name = 'cached_record'
   s.version = '0.0.1'
   s.date = '2008-10-26'
 
