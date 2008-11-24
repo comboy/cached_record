@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   #s.extra_rdoc_files = ['README.rdoc', 'LICENSE', 'CHANGELOG.rdoc']
 
   s.test_files = Dir.glob("test/**/*").collect
-  s.files = Dir.glob("test/**/*").collect - Dir.glob("test/**/*").collect
+  s.files = Dir.glob("**/**/*").collect - Dir.glob("test/**/*").collect
 end
